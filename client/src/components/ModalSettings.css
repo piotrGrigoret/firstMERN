@@ -1,0 +1,189 @@
+
+.modalComentBackground{
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.3; */
+    width: 100vw;
+    height: 120vh;
+    position: fixed;
+   
+}
+
+.modalComentCard{
+
+    width: 110vh;
+    height: 110vh;
+    border-radius: 3vh;
+    background-color: white;
+    opacity: 1;
+    /* margin-left: 100vh; */
+    /* margin-top: 6vh; */
+    display: grid;
+    grid-template-columns: 50% 35% 15%;
+    grid-template-rows: auto auto 20%;
+    border: solid rgb(237, 235, 235);
+
+}
+
+.zakratieModalCommentCard{
+    grid-column-start: 3;
+    height: 4vh;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight:700;
+    font-size: 20px;
+    color: rgb(171, 171, 171);
+    text-align: center;
+
+}
+.zakratieModalCommentCard:hover{
+    color:  red;
+}
+    
+.coomentInput{
+    grid-row-start:3 ;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* border: solid; */
+
+}
+.coomentInput textarea {
+    width: 61vh;
+    height: 15vh;
+    resize: none;
+    border-radius: 10px;
+}
+.sendMessage{
+    /* border: solid; */
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.sendMessage img {
+ 
+    width: 70px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.messageArea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 3;
+    margin-top: 1vh;
+    overflow: auto;
+}
+.messageArea::-webkit-scrollbar {
+    width: 4px; /* ширина для вертикального скролла */
+    height: 1px; /* высота для горизонтального скролла */
+    background-color: #ced3d7;
+}
+.messageArea::-webkit-scrollbar-thumb {
+    background-color: #1b1584;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #757b79;
+}
+
+.messageArea::-webkit-scrollbar-thumb:hover {
+    background-color: #163365;
+}
+
+::-webkit-scrollbar {
+    width: 14px; /* ширина для вертикального скролла */
+    height: 1px; /* высота для горизонтального скролла */
+    background-color: #ced3d7;
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color: #5e5d68;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #757b79;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #272828;
+}
+
+
+.messageAndFotoCard{
+   /* border: solid; */
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.messageCard{
+    
+    background-color: rgb(214, 215, 215);
+    margin: 2px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 72% 8%;
+    grid-template-rows: 25% 50% 25%;
+    
+    max-width: 60vh;
+  
+
+}
+.avatar{
+    margin: 2px;
+
+}
+.avatar img{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+.messageText{
+    margin-top: 0.5vh;
+    grid-column-start: 1;
+    min-height: 1vh;
+    grid-column-end: 3;
+    font-weight: 500;
+    grid-row-start: 2;
+    /* border: solid; */
+    width: 50vh;
+    word-break: break-all;
+    height: max-content;
+}
+.messageName{
+    color: rgb(79, 31, 31);
+    font-weight: 700;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.messageDate{
+    /* border: solid; */
+    /* line-height: 4vmax; */
+    /* text-align: right; */
+    grid-row-start: 3;
+    grid-column-start: 2;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: right;
+    
+}
+
+
+.noneDisplayKrestik{
+    display: none;
+}
+.ModalCommentkrestik{
+    grid-row-start: 1;
+    width: 22px;
+    height: 22px;
+    grid-column-start:3;
+    font-size: large;
+    margin-top: 1vh;
+    margin-left: 1vh;
+}
+
+.ModalCommentkrestik img{
+    width: 18px;
+    height: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.ModalCommentkrestik img:hover{
+    width: 22px;
+    height: 22px;
+
+}

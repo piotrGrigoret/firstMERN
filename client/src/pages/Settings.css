@@ -1,0 +1,359 @@
+
+.obiortkaSettings{
+    height: 100vh;
+    background: rgb(217,220,238);
+
+}
+
+.obiortkaSettingsDark{
+    height: 100vh;
+    background: linear-gradient(169deg, rgba(23, 22, 55, 0.869) 14%, rgba(24,27,65,1) 33%, rgba(22, 38, 84, 0.998) 55%, rgba(16,16,22,1) 83%);
+    background: rgb(31,30,57);
+
+}
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+}
+
+.sidenav div {
+    padding: 0px 0px 0px 10px;
+    /* margin-bottom: 10px; */
+    height: 50px;
+    /* margin-left: 10px; */
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    /* line-height: 28px; */
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidenav div:hover {
+    border-bottom: solid rgb(49, 43, 30) 0.5px;
+
+    background-color: #1e1d1d;
+    color: #f1f1f1;
+}
+
+.mainSetting {
+    margin-left: 260px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav div {font-size: 18px;}
+}
+
+.settingsProfileBox{
+    margin-top: 10vh;
+    margin-left: 35vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 5vh;
+}
+
+.settingInput{
+    width: 65vh;
+    height: 8vh;
+    border-radius: 10px;
+    border: solid rgb(113, 107, 107) 1px;
+    margin-left: 6vh;
+    margin-bottom: 1vh;
+    background-color: rgb(230, 228, 226);
+    font-size: 18px;
+    font-weight: 500;
+}
+.rowSettings{
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+.rowSettingsDark{
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+
+.rowSettings span{
+    font-size: 25px;
+    line-height: 9vh;
+}
+
+.rowSettingsDark span{
+    color: white;
+    font-size: 25px;
+    line-height: 9vh;
+}
+.rowSettingsTitle{
+    color:black;
+    font-size: 25px;
+    line-height: 9vh;
+}
+.rowSettingsTitleDark{
+    color: white;
+    font-size: 25px;
+    line-height: 9vh;
+}
+.submitButtonSettings{
+   
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 44vh;
+    margin: 1vh;
+    will-change: transform;
+    margin-left: 65vh;
+    margin-top: 8vh;
+}
+
+
+.submitButtonSettings:disabled {
+    pointer-events: none;
+  }
+
+.submitButtonSettings:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+.submitButtonSettings:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .submitButtonSettingsDisable{
+   
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 44vh;
+    margin: 1vh;
+    will-change: transform;
+    margin-left: 65vh;
+    margin-top: 8vh;
+    opacity: 0.6;
+}
+.imageSet{
+    cursor: pointer;
+    margin-left: 120vh;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+
+}
+.imageSet:hover{
+    width: 27px;
+    height: 27px;
+}
+.boxProfilePassword{
+
+}
+.titlePage{
+    font-size: 35px;
+    font-weight: 600;
+    /* border: solid; */
+}
+.titlePageDark{
+    font-size: 35px;
+    font-weight: 600;
+    /* border: solid; */
+    width: 50vh;
+    color: white;
+}
+
+.rowSettingsPassword{
+    display: grid;
+    grid-template-columns:  auto;   
+    /* border: solid; */
+
+}
+
+
+.title{
+     font-size: 25px;
+    margin-left: 5vh;
+    width: 25vh;
+    margin-bottom:2vh;
+}
+
+.titleDark{
+    font-size: 25px;
+   margin-left: 5vh;
+   width: 25vh;
+   color: white;
+   margin-bottom:2vh;
+}
+.settingsPasswordBox{
+    /* margin-top: 5vh; */
+    margin-bottom: 52vh;
+    margin-left: 50vh;
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: auto auto auto; */
+    gap: 5vh;   
+    height: 100px;
+}
+.block{
+    display: grid;
+    grid-template-columns: auto 50%;
+    /* border: solid; */
+}
+.showPasswordBlockSet  {
+    /* width: 280px; */
+    /* height:280px; */
+    cursor: pointer;
+    margin-left: 1vh;
+}
+.pustouBlok{
+    height: 3.4vh;
+
+}
+.errorBoxPaswordSet{
+    height: 3.4vh;
+    background-color: rgb(197, 57, 57);
+    opacity: 0.8;
+    border-radius: 60px;
+    width: 53%;
+    margin-left: 3.4%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.succesBoxPaswordSet{
+    height: 3.4vh;
+    background-color: rgb(10, 120, 10);
+    opacity: 0.7;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 60px;
+    width: 53%;
+    margin-left: 3.4%;
+    font-size: 20px;
+    
+}
+
+
+
+.themeBox{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto auto;
+    margin-left: 20vh;
+    padding-top: 10vh;
+    /* width: 70vh; */
+}
+.titlePageTheme{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    font-size: 35px;
+    font-weight: 600;
+}
+.titlePageThemeDark{
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    font-size: 35px;
+    font-weight: 600;
+}
+.theme{
+    grid-row-start: 2;
+    border: solid 5px white;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 5vh;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.theme img{
+    width: 15vh;
+    height: 15vh;
+    margin-left: 2.5vh;
+    margin-top: 2.5vh;
+}
+    
+.theme:hover{
+    margin-top: -1vh;   
+    -webkit-box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.theme1{
+    grid-row-start: 2;
+    border: solid 5px white;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 5vh;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #373333;
+}
+.theme1 img{
+    width: 15vh;
+    height: 15vh;
+    margin-left: 2.5vh;
+    margin-top: 2.5vh;
+}
+    
+.theme1:hover{
+    margin-top: -1vh;   
+    -webkit-box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+box-shadow: -10px 9px 0px 0px rgba(0,0,0,0.75);
+}

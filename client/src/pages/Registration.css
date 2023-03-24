@@ -1,0 +1,119 @@
+.container{
+    width: 70vh;
+    height: 50vh;
+    border: solid;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 35%;
+    border-radius: 6vh;
+    margin-top: 10%;
+}
+.container2{
+    width: 70vh;
+    height: 65vh;
+    border: solid;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 35%;
+    border-radius: 6vh;
+    margin-top: 10%;
+}
+.errorBox{
+    background-color: rgb(197, 57, 57);
+    opacity: 0.8;
+    border-radius: 60px;
+    width: 93%;
+    margin-left: 3.4%;
+}
+.pustashka{
+    margin-bottom: 7vh;
+    text-align: center;
+    font-size: large;
+}
+.registrationInput{
+    width: 55vh;
+    height: 8vh;
+    border-radius: 10px;
+    border: solid rgb(113, 107, 107) 1px;
+    margin-left: 6vh;
+    margin-bottom: 1vh;
+    background-color: rgb(230, 228, 226);
+
+    font-weight: 600;
+}
+.undText{
+    margin-left: 10%;
+}
+.linkToRegstr{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: rgb(130, 54, 130);
+    cursor: pointer;
+}
+.submitButton{
+   
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 54vh;
+    margin: 1vh;
+    will-change: transform;
+    margin-left: 6.9vh;
+    margin-bottom: 1vh;
+}
+
+
+.submitButton:disabled {
+    pointer-events: none;
+  }
+
+.submitButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+.submitButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+.showPasswordBlock  {
+    /* width: 280px; */
+    /* height:280px; */
+    margin-left: 2vh;
+    cursor: pointer;
+}
+.image{
+    width: 20px;
+    height: 20px;
+    transition: 0.2s;
+
+}
+.image:hover{
+    width: 22px;
+    height: 22px;
+}
+
+
+  
