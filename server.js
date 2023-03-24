@@ -10,10 +10,15 @@ require('dotenv').config({path: __dirname + '/.env' });
     
 const app = express();
 
-const PORT = process.env.PORT;
-const DB_USER = process.env.DB_USER;
-const DB_NAME = process.env.DB_NAME;
-const DB_PASSWORD = process.env.DB_PASSWORD;
+// const PORT = process.env.PORT;
+// const DB_USER = process.env.DB_USER;
+// const DB_NAME = process.env.DB_NAME;
+// const DB_PASSWORD = process.env.DB_PASSWORD;
+const PORT = 5000;
+const DB_USER = "myLocalEnvironment";
+const DB_NAME = "test";
+const DB_PASSWORD = "qeJu0Y16qXr3W1hU";
+
 
 const start = async() => {
     try{
