@@ -40,7 +40,7 @@ app.use(
     cors({
       origin: [
         'http://localhost:3000', 
-        "https://todo-app-moldova.onrender.com/",
+        "https://todo-app-moldova.onrender.com",
         "https://first-mern-test.onrender.com"
     ],
     
