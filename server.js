@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cors = require('cors');
 const { request, response } = require("express");
+const path = require('path')
 require('dotenv').config({path: __dirname + '/.env' });
+
 
 
     
@@ -31,6 +33,8 @@ const start = async() => {
 };
 
 start();
+
+app.use('/static', express.static(path.join(__dirname, '/client/build')));
 
 app.use(express.json());
 app.use(
