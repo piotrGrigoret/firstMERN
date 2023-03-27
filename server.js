@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cors = require('cors');
 const { request, response } = require("express");
-const path = require('path')
 require('dotenv').config({path: __dirname + '/.env' });
 
 
@@ -48,7 +47,8 @@ app.use(
 // })
 
 app.get("/", async (request, response) => {
-    const user = await Article.find({});
+    // const user = await Article.find({});
+    const user = "hello";
   
     response.send(user);
 
