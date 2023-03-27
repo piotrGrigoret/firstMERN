@@ -38,7 +38,11 @@ start();
 app.use(express.json());
 app.use(
     cors({
-      origin: 'http://localhost:3000',
+      origin: [
+        'http://localhost:3000', 
+        "https://first-mern-test.onrender.com"
+    ],
+    
     }),
 );
 
@@ -47,8 +51,9 @@ app.use(
 // })
 
 app.get("/", async (request, response) => {
-    // const user = await Article.find({});
-    const user = "hello";
+    const user = await Article.find({userId:"641d9b0ebb009c3e2f0529ed"});
+    console.log(user);
+    // const user = "hello";
   
     response.send(user);
 
@@ -56,8 +61,8 @@ app.get("/", async (request, response) => {
 });
 
 app.get("/articles", async (request, response) => {
-    // console.log(request.query.param1);
- 
+    console.log(request);
+    
     const user = await Article.find({userId:request.query.param1});
     // console.log(user);
     try {
@@ -88,6 +93,7 @@ app.post("/add", async(request,response) => {
 
 
 app.delete("/delete", async (request, response) => {
+    console.log(request.body);
     const id = request.body.id;
     // console.log('start delete');
     // console.log(request.body);
