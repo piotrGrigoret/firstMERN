@@ -125,7 +125,7 @@ const getUserOBject = async() => {
     console.log(tempArticleObj);
 
       if(tempArticleObj.text !=="" && tempArticleObj.title !==""){
-        const res = await axios.post("https://todo-app-moldova.onrender.com/add", {article : tempArticleObj});
+        const res = await axios.post("https://first-mern-test.onrender.com/add", {article : tempArticleObj});
      
         const cpyObj = {...res.data};
         const cpyArticles = [...articlesArray, cpyObj]; 
@@ -152,7 +152,7 @@ const getUserOBject = async() => {
       }); 
       // console.log(cpyArticle);
       setArticlesArray(cpyArticle);
-      const res = await axios.delete("https://todo-app-moldova.onrender.com/delete", {data:{id:article._id}});
+      const res = await axios.delete("https://first-mern-test.onrender.com/delete", {data:{id:article._id}});
       console.log("res:" + res);
     };
     const onChangeObjectHandler = (article) => {
@@ -185,7 +185,7 @@ const getUserOBject = async() => {
       setValues1("");
       setValues2("");
       setTempArticleObject(modelTempObj);
-      await axios.post("https://todo-app-moldova.onrender.com/redax", {data:{redactObj:tempArticleObj}});
+      await axios.post("https://first-mern-test.onrender.com/redax", {data:{redactObj:tempArticleObj}});
 
     }
 
