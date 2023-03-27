@@ -34,7 +34,7 @@ export const Settings = (props) => {
             // console.log(userId);
     
         }
-               const response = await axios.get('http://localhost:5000/user', {
+               const response = await axios.get('https://first-mern-test.onrender.com/user', {
             params:{
             param2: userId,
             }
@@ -94,7 +94,7 @@ export const Settings = (props) => {
         setBoolProfile(false);
         setSuccesParol(true);
         console.log(dbUser);
-        await axios.post("http://localhost:5000/changheuser", {updateObj:dbUser});
+        await axios.post("https://first-mern-test.onrender.com/changheuser", {updateObj:dbUser});
 
     };
 
@@ -135,7 +135,7 @@ export const Settings = (props) => {
             setErrorParol(false);
             setSuccesParol(true);
             setBoolProfile(false);
-            await axios.post("http://localhost:5000/reductpassword", {password:dbUser});
+            await axios.post("https://first-mern-test.onrender.com/reductpassword", {password:dbUser});
         }
     }
 
@@ -166,7 +166,7 @@ export const Settings = (props) => {
             // console.log(dbUserCopy);
             setDBuser(dbUserCopy);
 
-            await axios.post("http://localhost:5000/changheuser", {updateObj:dbUserCopy});
+            await axios.post("https://first-mern-test.onrender.com/changheuser", {updateObj:dbUserCopy});
 
         }else{
             const darkObj = {...props.objChangheTh};
@@ -194,7 +194,7 @@ export const Settings = (props) => {
             // console.log(dbUserCopy);
             setDBuser(dbUserCopy);
 
-            await axios.post("http://localhost:5000/changheuser", {updateObj:dbUserCopy});
+            await axios.post("https://first-mern-test.onrender.com/changheuser", {updateObj:dbUserCopy});
         }
     }
     // const [changheClassThemeButton, setChangheClassThemeButton] = useState(dbUser.theme == "light" ? false : true);

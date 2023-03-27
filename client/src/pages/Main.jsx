@@ -26,13 +26,16 @@ const Main = (props) => {
   const [userObj, setUserObj] = useState({});
   // console.log(tempArticleObj);
   const fetchData = async () => {
-  const response = await axios.get('http://localhost:5000/articles', {
+   const test =  await axios.get("https://first-mern-test.onrender.com");
+   console.log(test);  
+  // const response = await axios.get('http://localhost:5000/articles', {
+  const response = await axios.get('https://first-mern-test.onrender.com/articles', {
 
   params: {
       param1: props.userIn._id,
     }
   }
-  
+  // console.log()
   );
     
     // console.log(response.data);
@@ -40,7 +43,7 @@ const Main = (props) => {
 
   }
 const getUserOBject = async() => {
-  const responseUserObj = await axios.get('http://localhost:5000/user', {
+  const responseUserObj = await axios.get('https://first-mern-test.onrender.com/user', {
     
     params:{
       param2: props.userIn._id,

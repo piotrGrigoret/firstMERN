@@ -66,7 +66,7 @@ const Registration = (props) => {
         setValues3("");
         setValues4("");
         
-        await axios.post("http://localhost:5000/adduser", {user: userObj});
+        await axios.post("https://first-mern-test.onrender.com/adduser", {user: userObj});
     };
 
     const changheShowPasswordHandler = () => {
@@ -88,7 +88,7 @@ const Registration = (props) => {
 
     const onCheckVerification = async () => {
         
-        const response = await axios.post('http://localhost:5000/userverification', {user: userObj});
+        const response = await axios.post('https://first-mern-test.onrender.com/userverification', {user: userObj});
         // console.log(response.data);
 
         if(response.data.length !== 0){
