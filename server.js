@@ -34,7 +34,7 @@ const start = async() => {
 
 start();
 
-app.use('/static', express.static(path.join(__dirname, '/client/build')));
+// app.use('/static', express.static(path.join(__dirname, '/client/build')));
 
 app.use(express.json());
 app.use(
@@ -42,10 +42,15 @@ app.use(
       origin: 'http://localhost:3000',
     }),
 );
-    
+
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+// })
+
 app.get("/", async (request, response) => {
+    const user = await Article.find({});
   
-    response.send("hello world!");
+    response.send(user);
 
     
 });
